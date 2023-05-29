@@ -1,0 +1,47 @@
+.modal {
+  display: flex;
+  gap: 54px;
+  padding: 32px;
+}
+
+.productImage { 
+  width: 250px;
+  height: 250px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.productInfoModal {
+  width: 428px;
+  height: 248px;
+}
+
+.productTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  margin-bottom: 12px;
+}
+
+.productSubTitle {
+  margin-bottom: 48px;
+}
+
+.addButton {
+  display: flex;
+}
+
+.buttonCount {
+  display: flex;
+  gap: 12px;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+}
