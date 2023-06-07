@@ -2,8 +2,26 @@ import style from "./Branches.module.scss";
 import * as React from "react";
 import Button from "@mui/material/Button";
 import bran from "./bran";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
+import BranchCard from "../BranchCard/BranchCard";
+import { Link } from "react-router-dom";
+
+const baseURL =
+  "https://64787eea362560649a2de56b.mockapi.io/zuzuAdmin/branches";
 
 function Branches() {
+  const [dataBranch, setDataBranch] = useState([]);
+  useEffect(() => {
+    axios
+      .get(baseURL)
+      .then((res) => setDataBranch(res.data))
+      .catch((err) => console.log("err", err));
+  }, []);
+
+  console.log("dataBranch1111111111111111", dataBranch);
+
   return (
     <div className={style.branchWrap}>
       <div className={style.branchHeader}>
@@ -18,15 +36,16 @@ function Branches() {
         </div>
       </div>
       <div className={style.allBranches}>
-        {bran.map((branch) => (
-          <div className={style.branch}>
-            <div className={style.branchName}>{branch.name}</div>
-            <div className={style.branchTimeJob}>
-              Magic City,ул. Бабура, 174, Ташкент, Узбекистан
-            </div>
-            <div className={style.branchTime}>Часы работы</div>
-            <div className={style.branchForDay}>Ежедневно: 10:00-03:00</div>
-          </div>
+        {dataBranch.map((bran) => (
+          <Link to={bran.id}>
+            <BranchCard
+              key={bran.id}
+              name={bran.name}
+              address={bran.address}
+              fromTime={bran.fromTime}
+              toTime={bran.toTime}
+            />
+          </Link>
         ))}
       </div>
     </div>

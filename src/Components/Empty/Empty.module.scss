@@ -1,0 +1,41 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  width: 550px;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292929;
+}
+
+.subTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #808080;
+}

@@ -21,9 +21,9 @@ function Footer() {
   return (
     <div className={style.footer}>
       <div className={style.footerTop}>
-        <div className={style.footerLogo}>
+        <Link to="/" className={style.footerLogo}>
           <img src={logo} alt="Footer-Logo" />
-        </div>
+        </Link>
         <nav>
           <ul className={style.info}>
             {links.map((v) => (

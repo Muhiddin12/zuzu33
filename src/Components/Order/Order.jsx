@@ -47,13 +47,21 @@ function Order({ currentProduct }) {
     // console.log("currentProduct", currentProduct, currentProduct.id);
   };
 
+  // const [open, setOpen] = useState(false);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
+
+  // const closedModal = () => {
+  //   handleClose();
+  // };
+
   return (
     <div className={style.home}>
       <Box sx={styleNew}>
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           <div className={style.modal}>
             <div className={style.productImage}>
-              <img src={currentProduct.imgPizza} alt="pImage" />
+              <img src={currentProduct.image} alt="pImage" />
             </div>
             <div className={style.productInfoModal}>
               <div className={style.productTitle}>{currentProduct.name}</div>

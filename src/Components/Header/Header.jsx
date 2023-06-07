@@ -17,26 +17,27 @@ import header from "./image 7.png";
 
 function Header() {
   return (
-    <Swiper
-      cssMode={true}
-      navigation={true}
-      pagination={true}
-      mousewheel={true}
-      keyboard={true}
-      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className={style.mySwiper}
-    >
-      <SwiperSlide>
-        <img src={header} alt="header" />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <img src={header} alt="img2" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={header} alt="img3" />
-      </SwiperSlide>
-    </Swiper>
+    <div className={style.swiperBox}>
+      <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className={style.mySwiper}
+      >
+        <SwiperSlide>
+          <img src={header} alt="header" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={header} alt="img2" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={header} alt="img3" />
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 }
 

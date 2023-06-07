@@ -50,7 +50,7 @@ function Cart() {
           <div className={style.order}>
             <div className={style.orderMenu}>
               <div className={style.orderImg}>
-                <img src={product.imgPizza} alt="orderImage" />
+                <img src={product.image} alt="orderImage" />
               </div>
               <div className={style.orderName}>
                 <div className={style.orderTitle}>{product.name}</div>

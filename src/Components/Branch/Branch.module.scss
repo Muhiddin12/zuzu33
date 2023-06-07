@@ -1,0 +1,40 @@
+.branchWrap {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 24px;
+  gap: 32px;
+  width: 843px;
+  height: 909px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.branchTitle {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+}
+
+
+.branchDescription {
+}
+
+.branchImage {
+  width: 795px;
+  height: 477px;
+  border-radius: 12px;
+}
+
+.address {
+}
+
+.time {
+}
+
+.number {
+}

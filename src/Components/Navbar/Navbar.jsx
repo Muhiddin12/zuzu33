@@ -76,9 +76,9 @@ function Navbar() {
           </React.Fragment>
         ))}
 
-        <a href="http://localhost:3000/">
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <div className={style.map}>
           <box-icon name="map"></box-icon>
           <div></div>
