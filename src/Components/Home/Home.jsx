@@ -78,7 +78,6 @@ function Home() {
       <Header />
       <Categories />
       <Products handleOnClickId={handleOnClickId} />
-      <Empty />
       <Modal
         open={open}
         onClose={handleClose}
