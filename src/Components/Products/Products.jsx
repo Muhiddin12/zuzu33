@@ -27,7 +27,7 @@ function Products({ handleOnClickId }) {
 
   const filterProduct = formatCategories(product);
 
-  // console.log("filterProduct => ", filterProduct);
+  console.log("filterProduct => ", filterProduct);
 
   useEffect(() => {
     axios
@@ -47,8 +47,10 @@ function Products({ handleOnClickId }) {
                 <div className={style.productImage}>
                   <img src={product.image} alt="pImage" />
                 </div>
-                <div className={style.title}>{product.name}</div>
-                <div className={style.subtitle}>{product.comment}</div>
+                <div className={style.title}>{product.title}</div>
+                <div className={style.subtitle}>
+                  {product.description.slice(0, 110)}
+                </div>
                 <div className={style.productInfo}>
                   <div className={style.price}>От {product.price} сумов</div>
                   <button onClick={() => handleOnClickId(product.id)}>
@@ -65,19 +67,3 @@ function Products({ handleOnClickId }) {
 }
 
 export default Products;
-
-// {item.products.map((product) => (
-//   <div className={style.product}>
-//     <div className={style.productImage}>
-//       <img src={product.imgPizza} alt="pImage" />
-//     </div>
-//     <div className={style.title}>{product.name}</div>
-//     <div className={style.subtitle}>{product.comment}</div>
-//     <div className={style.productInfo}>
-//       <div className={style.price}>От {product.price} сумов</div>
-//       <button onClick={() => handleOnClickId(product.id)}>
-//         Выбрать
-//       </button>
-//     </div>
-//   </div>
-// ))}

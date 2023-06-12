@@ -11,7 +11,7 @@ function Contacts() {
       <div className={style.contactInfo}>
         Вы можете написать нам
         <span className={style.contactBot}>
-          <a href="#">@ZuzuPizzaSupport_bot</a>
+          <a href="#"> @ZuzuPizzaSupport_bot </a>
         </span>
         также вы можете звонить по номеру +998712005400.
       </div>

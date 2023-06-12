@@ -4,11 +4,11 @@ import aboutImage from "./about.png";
 function About() {
   return (
     <div className={style.about}>
-      <div className="aboutImg">
+      <div className={style.aboutImg}>
         <img src={aboutImage} alt="aboutImage" />
       </div>
-      <div className="aboutTitle">О нас</div>
-      <div className="aboutInfo">
+      <div className={style.aboutTitle}>О нас</div>
+      <div className={style.aboutInfo}>
         «Zuzu Пицца» — это сервис доставки пиццы в Ташкенте. Мы доставляем пиццу
         и другую еду по Ташкенту в пределах Большой кольцевой дороги, а так же в
         районы: Сергели, ТТЗ, Югнакий, Хумаюн. Приготовление пиццы занимает в
