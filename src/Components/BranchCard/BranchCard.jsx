@@ -10,7 +10,7 @@ function BranchCard({ key, name, address, fromTime, toTime }) {
           Magic City,ул. Бабура, 174, Ташкент, Узбекистан
         </div>
         <div className={style.branchTime}>Часы работы</div>
-        <div className={style.branchTime}>{address}</div>
+        {/* <div className={style.branchTime}>{address}</div> */}
         <div className={style.branchForDay}>Ежедневно: 10:00-03:00</div>
       </div>
     </div>

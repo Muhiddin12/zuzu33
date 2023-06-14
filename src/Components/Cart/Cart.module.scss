@@ -3,13 +3,25 @@
   display: flex;
   margin: 30px auto;
   gap: 16px;
+
+  @media (max-width: 970px) {
+    display: flex;
+    max-width: 1248px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 }
 
 .cartMenu {
   width: 827px;
-  height: 300px;
   background: white;
   border-radius: 20px;
+
+  @media (max-width: 970px) {
+    width: 700px;
+    // max-width: 827px;
+  }
 }
 
 .header {
@@ -49,8 +61,11 @@
 .order {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(187, 183, 183);
   margin: 8px 24px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgb(187, 183, 183);
+  }
 }
 
 .orderMenu {
@@ -109,7 +124,6 @@
 
 .cartPrice {
   width: 405px;
-  height: 300px;
   background: white;
   border-radius: 20px;
   padding: 16px 24px;
@@ -129,6 +143,10 @@
 .priceCount {
   display: flex;
   justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .priceNumber {
@@ -152,6 +170,7 @@
 .priceDelivery {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .priceSumma {

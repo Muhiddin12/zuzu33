@@ -18,11 +18,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 26px;
-  align-items: center;
+  justify-items: center;
 }
 
 .product {
-  min-width: 200px;
+  min-width: 100px;
   max-width: 300px;
   height: 410px;
   background: #ffffff;
