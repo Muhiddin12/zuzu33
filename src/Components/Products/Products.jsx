@@ -47,9 +47,9 @@ function Products({ handleOnClickId }) {
                 <div className={style.productImage}>
                   <img src={product.image} alt="pImage" />
                 </div>
-                <div className={style.title}>{product.title}</div>
+                <div className={style.title}>{product.title.slice(0, 40)}</div>
                 <div className={style.subtitle}>
-                  {product.description.slice(0, 110)}
+                  {product.description.slice(0, 80)}
                 </div>
                 <div className={style.productInfo}>
                   <div className={style.price}>От {product.price} сумов</div>

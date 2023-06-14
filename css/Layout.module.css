@@ -1,9 +1,11 @@
 .wrapper {
-  margin: 0 auto;
-  max-width: 1440px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // background: #e5e5e5;
+  /* background: #e5e5e5; */
+}
+
+.main {
+  display: 1 1 auto;
 }

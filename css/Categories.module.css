@@ -1,0 +1,18 @@
+.category {
+  margin: 40px auto 0;
+  max-width: 1248px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.category button {
+  padding: 14px 24px;
+  background: #ffffff;
+  border-radius: 100px;
+  border: none;
+  white-space: nowrap;
+}
+.category button:hover {
+  background: #EC8D1E;
+  color: white;
+}

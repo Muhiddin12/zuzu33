@@ -1,5 +1,5 @@
 .contact {
-  max-width: 721px;
+  width: 721px;
   margin: 0 auto;
   border-radius: 15px;
   padding: 15px;
@@ -33,9 +33,6 @@
   font-size: 20px;
   line-height: 28px;
   color: #000000;
-}
-
-.contactBot {
 }
 
 .contactTel {

@@ -4,6 +4,11 @@
   display: flex;
   gap: 24px;
   margin-bottom: 56px;
+  overflow-x: auto;
+
+  @media (max-width: 990px) {
+    overflow-x: auto;
+  }
 
   button {
     padding: 14px 24px;
@@ -14,7 +19,12 @@
   }
 
   button:hover {
-    background: #EC8D1E;
+    background: #ec8d1e;
     color: white;
   }
 }
+
+.category::-webkit-scrollbar {
+  width: 0;
+}
+
